@@ -4,13 +4,11 @@ import { useGlobalContext } from "../hooks/context";
 
 function GameOver() {
   const {
-    board,
-    setBoard,
+   
     currAttempt,
     gameOver,
-    onSelectLetter,
     correctWord,
-    onDelete,
+    
   } = useGlobalContext();
   return (
     <div className="gameOver">

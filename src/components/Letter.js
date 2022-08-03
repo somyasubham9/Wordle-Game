@@ -9,9 +9,11 @@ const Letter = ({letterPos,attemptVal}) => {
     const letterState=(currAttempt.attempt>attemptVal) && (correct ? 'correct' : almost ? 'almost' : 'error');
 
     useEffect(()=>{
+
             if(letter!=="" && !correct && !almost)
-            setDisabledLetters((prev)=>[...prev,letter])
-    },[currAttempt.attempt])
+            setDisabledLetters((prev)=>[...prev,letter]);
+            
+    },[currAttempt.attempt]);
     console.log(letter);
   return (
     <div className='letter' id={letterState.toString()}>{letter}</div>
