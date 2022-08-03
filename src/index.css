@@ -41,8 +41,8 @@ nav h1 {
 }
 
 .board {
-  width: 550px;
-  height: 550px;
+  width: 400px;
+  height: 600px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
